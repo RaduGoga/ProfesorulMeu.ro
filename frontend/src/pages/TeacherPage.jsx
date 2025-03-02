@@ -125,13 +125,13 @@ const TeacherPage = () => {
         <Box>
           {teacher && (
           <>
-            <TeacherProfile teacher={teacher} />
+            <TeacherProfile ml={3} teacher={teacher} />
           </>
           )}
         </Box>
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
           {averageOfAverages && (
-                <Text color={'blue.500'} fontSize={70}><strong>{averageOfAverages}</strong></Text>
+                <Text color={'blue.500'} fontSize={70} mr={3}><strong>{averageOfAverages}</strong></Text>
           )}
           <Text marginTop={-5} fontSize={40}><strong>/5</strong></Text>
         </Box>

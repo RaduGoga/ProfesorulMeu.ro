@@ -60,7 +60,7 @@ const Navbar = () => {
               boxShadow="lg"
               mt="5px"
               py={2}
-              w="150px"
+              w="185px"
               zIndex={10}
             >
               <Box
@@ -72,7 +72,7 @@ const Navbar = () => {
                 _hover={{ bg: "gray.100" }}
                 onClick={() => setIsOpen(false)}
               >
-                Add Teacher
+                Adauga un Profesor
               </Box>
               <Box
                 as={RouterLink}
@@ -83,7 +83,7 @@ const Navbar = () => {
                 _hover={{ bg: "gray.100" }}
                 onClick={() => setIsOpen(false)}
               >
-                FAQ & Contact
+                Intebari Frecvente si Contact
               </Box>
             </Box>
           )}

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/reviews';
+const BASE_URL = 'https://profesorulmeu-ro.onrender.com/reviews';
 
 export const fetchReviewsByTeacher = async (teacherId) => {
   const response = await axios.get(`${BASE_URL}/${teacherId}`);

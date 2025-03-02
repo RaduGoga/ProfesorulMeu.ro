@@ -42,27 +42,27 @@ const AddTeacherForm = ({ onSubmit }) => {
     <Box p={5} maxW="500px" mx="auto">
       {/* Centered, Blue Title */}
       <Heading size="lg" mb={2} textAlign="center" color="blue.500">
-        Add a Teacher
+        Adauga un Profesor
       </Heading>
 
       {/* Instructional Text */}
       <Text textAlign="center" fontWeight="bold" mb={6} color="gray.600">
-        Please fill in the teacher's name, select their school and subject, then click submit! The request may take up to 48h to be approved.
+        Scrie numele complet al unui profesor (prenume, nume), selecteaza scoala si materia, apoi apasa "Submit". Poate dura pana la 48 de ore ca cererea sa fie aprobata.
       </Text>
 
       {/* Name Input */}
       <Box mb={4}>
-        <Text as="label" display="block" mb={2} fontWeight="medium">Name</Text>
+        <Text as="label" display="block" mb={2} fontWeight="medium">Nume</Text>
         <Input
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Enter teacher's name"
+          placeholder="ex. Mihai Popescu"
         />
       </Box>
 
       {/* School Dropdown */}
       <Box mb={4}>
-        <Text as="label" display="block" mb={2} fontWeight="medium">School</Text>
+        <Text as="label" display="block" mb={2} fontWeight="medium">Scoala</Text>
         <Box
           as="select"
           value={school}
@@ -74,7 +74,7 @@ const AddTeacherForm = ({ onSubmit }) => {
           borderRadius="md"
           _focus={{ borderColor: 'teal.500', boxShadow: 'outline' }}
         >
-          <option value="">Select school</option>
+          <option value="">Selecteaza scoala</option>
           {schools.map((school) => (
             <option key={school.value} value={school.value}>
               {school.label}
@@ -85,7 +85,7 @@ const AddTeacherForm = ({ onSubmit }) => {
 
       {/* Subject Dropdown */}
       <Box mb={4}>
-        <Text as="label" display="block" mb={2} fontWeight="medium">Subject</Text>
+        <Text as="label" display="block" mb={2} fontWeight="medium">Materie</Text>
         <Box
           as="select"
           value={subject}
@@ -97,7 +97,7 @@ const AddTeacherForm = ({ onSubmit }) => {
           borderRadius="md"
           _focus={{ borderColor: 'teal.500', boxShadow: 'outline' }}
         >
-          <option value="">Select subject</option>
+          <option value="">Selecteaza materia</option>
           {subjects.map((subject) => (
             <option key={subject.value} value={subject.value}>
               {subject.label}
